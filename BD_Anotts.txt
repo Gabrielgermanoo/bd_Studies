@@ -1,0 +1,101 @@
+Banco de dados SQL e NoSQL
+
+Relacional e não relacional
+
+Modelagem conceitual e física
+
+ Diagramas UML 
+ Modelo de entidade e Relacionamento
+ Chave primária e tipos de dado
+ 
+Entidade e atributos no MER
+Relacionamento entre tabelas a partir de chaves estrangeiras
+
+0:0 -> nenhum relacionamento
+1:1 -> Relacionamento binario 1 para 1
+1:n -> relacionamento 1 para varios
+n:m -> relacionamento varios para varios
+
+Formas normais
+
+Primeira Forma Normal -> campos atômicos
+Segunda Forma Normal -> já se encontra na primeira forma e os
+atributos não chave forem totalmente dependentes da chave primária
+Terceira Forma Normal -> evitar repetições desnecessarias e
+possíveis sobrecargas
+
+SQL - Subgrupos
+
+DQL -> Data Query Language - SELECT Command
+DML -> Data Manipulation Language - Insert Command: UPDATE, where, set, Delete
+DDL -> Data Definition Language - Create, Alter e Drop -> Create Table, Alter Table, Drop Table
+DCL -> Data Control Language - Grant e Revoke: Autoriza e outro remove permissão
+DTL -> Data Transaction Language - Begin, Commit, Rollback
+
+
+Filtrando consultas -> WHERE
+
+
+Consultas em Multiplas tabelas -> necessidade de ter relacionamento
+entre as tabelas 
+	inner join -> junção interna 
+	outer join -> junção externa -> left outer join, right outer
+			join, full outer join(n funciona no mySQL
+	cross join -> junção cruzada
+	self join -> auto junção 
+	equi-join -> Junção baseada em comparador
+	natural join -> junção natural 
+	 
+Funções de agregação
+ max function
+having -> "tendo"
+ sum function
+ avg function
+ round function
+ count function
+
+ 
+funções de agrupamento e ordenação
+
+group by
+order by -> ASC, DESC
+
+
+Funções de Data e Hora
+
+CURDATE()
+CURTIME()
+DATE_ADD(DATA, INTERVALO)
+DATE_SUB(DATA,INTERVALO)
+DATEDIFF(Data1, data2)
+DATE_FORMAT(DATA, formato)
+DAYNAME(DATA) -> SET lc_time_names = "pt_BR"
+DAYOFMONTH(data)
+DAYOFWEEK(data)
+DAYOFYEAR(data)
+FROM_DAYS(data) -> Calendário gregoriano
+NOW()
+TIME()
+TIMESTAMP()
+SEC_TO_TIME(segundos)
+TIME_TO_SEC(hora)
+HOUR(), MINUTE(), SECOND()
+
+
+Subconsultas
+SELECT inside of SELECT
+
+Instalação do mySQL
+
+mysql -u root -p
+CREATE USER 'gabriel'@'localhost' IDENTIFIED BY 'germano';
+GRANT ALL PRIVILEGES ON *.* TO 'gabriel'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES
+
+
+Quando for usar o UPDATE lembrar do Where para n gerar danos na tabela
+
+
+
+
+
