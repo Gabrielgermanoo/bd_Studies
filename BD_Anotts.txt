@@ -96,6 +96,13 @@ FLUSH PRIVILEGES
 Quando for usar o UPDATE lembrar do Where para n gerar danos na tabela
 
 
+Documentação MongoDB
+
+db.tipos_produtos.find() db.tipos_produtos.find().pretty()
+db.tipos_produtos.insertOne({}) or db.tipos_produtos.insertMany()
+db.createCollections("Collection")
+
+
 
 
 
