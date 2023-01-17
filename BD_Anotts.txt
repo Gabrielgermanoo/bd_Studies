@@ -102,7 +102,46 @@ db.tipos_produtos.find() db.tipos_produtos.find().pretty()
 db.tipos_produtos.insertOne({}) or db.tipos_produtos.insertMany()
 db.createCollections("Collection")
 
+Documentaçao redis
 
+SET "nome" "Gabriel Lucas"
+GET "nome"
 
+DEL "nome"
+
+KEYS *
+
+KEYS nota*
+KEYS nota:*-06* -> REGEX
+KEYS nota:*:?????? -> interrogação serve para ver quantos tem
+
+MSET -> multiplos sets
+
+HSET -> hash set 
+HGET -> pegar o valor da hash
+HKEYS -> resgatar as chaves da hash
+HDEL -> apagar campos da hash
+HMSET -> multiplos hash set
+HGETALL -> valor dos campos e das chaves
+
+--- Listas em REDIS ---
+LPUSH -> adiciona na lista
+
+LLEN -> Ler na lista
+LRANGE -> alcance da lista (0, 1, 2, ...)
+LTRIM -> remove objetos da lista
+LINDEX
+LPOP -> remover "cabeça" da lista
+
+LRANGE "key" 0 -1 -> -1 é o ultimo indice da lista
+BLPOP timeout -> BLPOP "Key" 0 -> loop até achar
+
+HINCRBY "key" "indice" "valor"
+INCR count add
+INCRBYFLOAT -> numero decimais
+
+SORTED LIST-> ZADD 
+ZRANGE
+ZREVRANGE -> reverso
 
 
